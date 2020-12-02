@@ -3,7 +3,6 @@ package com.model2.mvc.web.product;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -83,6 +82,11 @@ public class ProductController {
 		
 		return "forward:/product/updateProductView.jsp";
 	}
+	
+	
+	
+	
+	
 		
 		@RequestMapping("/updateProduct.do")
 		public String updateProduct(@ModelAttribute("product")Product product)throws Exception{
