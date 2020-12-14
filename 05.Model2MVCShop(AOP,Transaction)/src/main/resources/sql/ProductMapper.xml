@@ -73,7 +73,7 @@
 													</if>
 												</where>
 											</if>
-											ORDER BY prod_name ) inner_table
+											ORDER BY prod_name DESC ) inner_table
 						WHERE ROWNUM &lt;= #{endRowNum} )
 		WHERE row_seq BETWEEN #{startRowNum} AND #{endRowNum} 
 	 </select>
